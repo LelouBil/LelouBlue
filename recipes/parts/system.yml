@@ -7,7 +7,6 @@ modules:
       - git-delta
       - python3.10
       - python3.10-devel
-      - nodejs20
       - gamescope-session-steam
   - type: files
     files:
