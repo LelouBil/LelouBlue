@@ -24,6 +24,7 @@ modules:
       - hyprpicker
       - udiskie
       - gammastep
+      - way-displays
   - type: files
     files:
       - source: desktop/config
