@@ -5,8 +5,8 @@ modules:
     install:
       - zsh
       - git-delta
-      - python3.10
-      - python3.10-devel
+      - python3
+      - nodejs
       - gamescope-session-steam
   - type: files
     files:
