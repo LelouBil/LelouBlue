@@ -25,6 +25,7 @@ modules:
       - hyprpicker
       - udiskie
       - gammastep
+      - wl-mirror
       - way-displays
   - type: files
     files:
