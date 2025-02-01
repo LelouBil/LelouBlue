@@ -66,3 +66,6 @@ modules:
       - polkit-kde
       - qt6-qtwayland
       - qt5-qtwayland
+  - type: script
+    snippets:
+      - "/usr/share/desktop-config/launch.sh check"
