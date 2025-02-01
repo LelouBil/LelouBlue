@@ -36,6 +36,10 @@ export WAY_DISPLAYS_CONFIG_FILE="$WAY_DISPLAYS_CONFIG_DIR/cfg.yaml"
 # used variables
 export KITTY_CONFIG_DIRECTORY="$KITTY_CONFIG_DIR"
 
+if [ "$1" == "check" ]; then
+  exec Hyprland --verify-config --config "$HYPRLAND_CONFIG_FILE"
+fi
+
 # run wm
 Hyprland --config "$HYPRLAND_CONFIG_FILE"
 
