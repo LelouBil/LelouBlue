@@ -38,7 +38,7 @@ export KITTY_CONFIG_DIRECTORY="$KITTY_CONFIG_DIR"
 
 if [ "$1" == "check" ]; then
   export XDG_RUNTIME_DIR=/tmp
-  exec Hyprland --verify-config --config "$HYPRLAND_CONFIG_FILE"
+  exec Hyprland --verify-config --i-am-really-stupid --config "$HYPRLAND_CONFIG_FILE"
 fi
 
 # run wm
