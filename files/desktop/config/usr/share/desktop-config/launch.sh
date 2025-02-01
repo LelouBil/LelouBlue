@@ -37,7 +37,7 @@ export WAY_DISPLAYS_CONFIG_FILE="$WAY_DISPLAYS_CONFIG_DIR/cfg.yaml"
 export KITTY_CONFIG_DIRECTORY="$KITTY_CONFIG_DIR"
 
 if [ "$1" == "check" ]; then
-  source /etc/profile.d/user-xdg-data-dir.sh
+  export XDG_RUNTIME_DIR=/tmp
   exec Hyprland --verify-config --config "$HYPRLAND_CONFIG_FILE"
 fi
 
