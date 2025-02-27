@@ -1,32 +1,34 @@
 modules:
   # bureau de base
-  - type: rpm-ostree
-    repos:
-      - https://copr.fedorainfracloud.org/coprs/leloubil/brillo/repo/fedora-%OS_VERSION%/leloubil-brillo-fedora-%OS_VERSION%.repo
-      - https://copr.fedorainfracloud.org/coprs/leloubil/way-displays/repo/fedora-%OS_VERSION%/leloubil-way-displays-fedora-%OS_VERSION%.repo
-      - https://copr.fedorainfracloud.org/coprs/solopasha/hyprland/repo/fedora-%OS_VERSION%/solopasha-hyprland-fedora-%OS_VERSION%.repo
-    install:
-      - hyprland
-      - kitty
-      - waybar
-      - dunst
-      - wofi
+  - type: dnfaaaaa
+    source: ghcr.io/blue-build/modules/dnf:dnf-module
+    packages:
+      - repo: 
+          - https://copr.fedorainfracloud.org/coprs/solopasha/hyprland/repo/fedora-%OS_VERSION%/solopasha-hyprland-fedora-%OS_VERSION%.repo
+        packages: 
+          - hyprland
+          - dunst
+          - swww
+          - waybar
+          - wofi
+          - hyprland-contrib
+          - hyprland-plugins
+          - hyprlock
+          - hypridle
+          - hyprpicker
+          - eww-wayland-git
+          - pyprland
+      - repo: 
+          - https://copr.fedorainfracloud.org/coprs/leloubil/brillo/repo/fedora-%OS_VERSION%/leloubil-brillo-fedora-%OS_VERSION%.repo
+        packages:
+          - brillo
       - pipewire
+      - kitty
       - wireplumber
       - network-manager-applet
-      - brillo
-      - swww
-      - eww-wayland-git
-      - pyprland
-      - hyprland-contrib
-      - hyprland-plugins
-      - hyprlock
-      - hypridle
-      - hyprpicker
       - udiskie
       - gammastep
       - wl-mirror
-      - way-displays
   - type: files
     files:
       - source: desktop/config
