@@ -8,23 +8,23 @@ modules:
         - solopasha/hyprland
     install:
       packages:
-        - repo: copr:copr.fedorainfracloud.org:solopasha:hyprland
-          packages:
-            - hyprland
-            - dunst
-            - swww
-            - waybar
-            - wofi
-            - hyprland-contrib
-            - hyprland-plugins
-            - hyprlock
-            - hypridle
-            - hyprpicker
-            - eww-wayland-git
-            - pyprland
-        - repo: copr:copr.fedorainfracloud.org:leloubil:brillo
-          packages:
-            - brillo
+#        - repo: copr:copr.fedorainfracloud.org:solopasha:hyprland
+#          packages:
+        - hyprland
+        - dunst
+        - swww
+        - waybar
+        - wofi
+        - hyprland-contrib
+        - hyprland-plugins
+        - hyprlock
+        - hypridle
+        - hyprpicker
+        - eww-wayland-git
+        - pyprland
+#        - repo: copr:copr.fedorainfracloud.org:leloubil:brillo
+#          packages:
+        - brillo
         - pipewire
         - kitty
         - wireplumber
