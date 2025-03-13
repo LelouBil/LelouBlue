@@ -1,11 +1,11 @@
 modules:
   # bureau de base
-  - type: dnfaaaaa
+  - type: dnf5
     source: ghcr.io/blue-build/modules/dnf:dnf-module
     packages:
-      - repo: 
+      - repo:
           - https://copr.fedorainfracloud.org/coprs/solopasha/hyprland/repo/fedora-%OS_VERSION%/solopasha-hyprland-fedora-%OS_VERSION%.repo
-        packages: 
+        packages:
           - hyprland
           - dunst
           - swww
@@ -18,7 +18,7 @@ modules:
           - hyprpicker
           - eww-wayland-git
           - pyprland
-      - repo: 
+      - repo:
           - https://copr.fedorainfracloud.org/coprs/leloubil/brillo/repo/fedora-%OS_VERSION%/leloubil-brillo-fedora-%OS_VERSION%.repo
         packages:
           - brillo
