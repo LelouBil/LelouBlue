@@ -1,6 +1,6 @@
 modules:
   # bureau de base
-  - type: dnf5
+  - type: dnf
     source: ghcr.io/blue-build/modules/dnf:dnf-module
     packages:
       - repo:
