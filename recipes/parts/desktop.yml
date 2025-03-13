@@ -18,7 +18,7 @@ modules:
             - hyprpicker
             - eww-wayland-git
             - pyprland
-        - repo: copr:copr.fedorainfracloud.org:leloubil:brilloé
+        - repo: copr:copr.fedorainfracloud.org:leloubil:brillo
           packages:
             - brillo
         - pipewire
