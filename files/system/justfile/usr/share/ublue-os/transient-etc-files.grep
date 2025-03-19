@@ -35,6 +35,8 @@
  nix-installer/?(.*)$
  profile.d/nix.sh$
  systemd/system/(.*)/?nix-daemon.(service|socket)$
+ systemd/system/(.*)/acpid.(service|socket)$
+ systemd/system/(.*)/plugin_loader.(service|socket)$
  systemd/system/nix.mount$
  systemd/system/nix-directory.service$
  selinux/
@@ -50,6 +52,8 @@
  sysconfig/anaconda$
  sysconfig/network$
  tuned/active_profile$
+ tuned/ppd_base_profile$
+ audit/audit.rules$
  libvirt/(.*)$
  containers/networks$
  tuned/profile_mode$
@@ -62,10 +66,14 @@
  bazzite$
  .rpm-ostree-shadow-mode-fixed.stamp$
  pki/(/.*)*$
- sgml
- skel
+ sgml$
+ skel$
  modulefiles$
- fstab
- vpl
- udev/hwdb.bin
- pki
+ fstab$
+ vpl$
+ udev/hwdb.bin$
+ pki$
+ cups/(.*)$
+ .linuxbrew.check$
+ .rpm-ostree-shadow-mode-fixed2.stamp$
+
