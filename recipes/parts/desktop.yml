@@ -32,6 +32,10 @@ modules:
         - udiskie
         - gammastep
         - wl-mirror
+        - network-manager-applet
+        - nm-connection-editor
+        - qt5ct
+        - qt6ct
   - type: files
     files:
       - source: desktop/config

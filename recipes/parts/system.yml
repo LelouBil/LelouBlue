@@ -7,6 +7,8 @@ modules:
       - git-delta
       - python3
       - nodejs
+      - nodejs20
+      - perl
       - gamescope-session-steam
   - type: files
     files:
