@@ -12,10 +12,6 @@ modules:
       - ydotool
       - strace
       - wev
-      - acpid
-  - type: script
-    snippets:
-      - "rm -rf /etc/acpid/{events,actions}"
   - type: files
     files:
       - source: system/system-apps/distrobox
