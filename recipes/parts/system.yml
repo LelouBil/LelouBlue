@@ -43,7 +43,7 @@ modules:
 # transient root
   - type: script
     snippets: 
-      - "printf '[root]\ntransient = true\n' >> /usr/lib/ostree/prepare-root.conf"
+      - "printf '[root]\\ntransient = true\\n' >> /usr/lib/ostree/prepare-root.conf"
   - type: script
     scripts:
       - "system/delete-unnecessary-files.sh"
