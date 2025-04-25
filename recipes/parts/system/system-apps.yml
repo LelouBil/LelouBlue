@@ -12,6 +12,8 @@ modules:
       - ydotool
       - strace
       - wev
+      - htop
+      - mc
   - type: files
     files:
       - source: system/system-apps/distrobox

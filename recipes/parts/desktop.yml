@@ -5,6 +5,7 @@ modules:
     repos:
       copr:
         - leloubil/brillo
+        - leloubil/wl-clip-persist
         - solopasha/hyprland
     install:
       packages:
@@ -21,6 +22,8 @@ modules:
         - hyprlock
         - hypridle
         - hyprpicker
+        - hyprsysteminfo
+        - hyprsunset
         - eww-wayland-git
         - pyprland
 #        - repo: copr:copr.fedorainfracloud.org:leloubil:brillo
@@ -31,12 +34,14 @@ modules:
         - wireplumber
         - network-manager-applet
         - udiskie
-        - hyprsunset
         - wl-mirror
         - network-manager-applet
+        - NetworkManager-openconnect-gnome
         - nm-connection-editor
         - qt5ct
         - qt6ct
+        - copyq
+        - wl-clip-persist
   - type: files
     files:
       - source: desktop/config
@@ -59,24 +64,23 @@ modules:
   #    user:
   #      install:
   #        - overskride-nightly
+  - type: systemd
+    user:
+      enabled:
+        - hyprpolkitagent.service
+        - hypridle.service
+        - hyprlock.service
+        - hyprsunset.service
   - type: files
     files:
       - source: desktop/polkit-kde-agent-scale
         destination:  /
-  - type: rpm-ostree
-    repos:
-      - https://copr.fedorainfracloud.org/coprs/leloubil/wl-clip-persist/repo/fedora-%OS_VERSION%/leloubil-wl-clip-persist-fedora-%OS_VERSION%.repo
-    install:
-      - copyq
-      - wl-clip-persist
-      # - hyprpicker
   # compatibilité
   - type: rpm-ostree
     install:
       - xdg-desktop-portal-hyprland
-      - polkit-kde
       - qt6-qtwayland
       - qt5-qtwayland
   - type: script
     snippets:
-      - "/usr/share/desktop-config/launch.sh check"
+      - "/usr/share/desktop-config/check.sh"
