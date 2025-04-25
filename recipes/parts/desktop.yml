@@ -21,6 +21,7 @@ modules:
         - hyprland-plugins
         - hyprlock
         - hypridle
+        - hyprpolkitagent
         - hyprpicker
         - hyprsysteminfo
         - hyprsunset
