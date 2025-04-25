@@ -60,20 +60,19 @@
  bluebuild$
  modprobe.d/tuned.conf$
  ssh/(.*)_key(\.pub)?$
- ublue-update.d(/.*)*$
- brlapi.key$
- ld.so.cache$
+ ublue-update\.d(/.*)*$
+ brlapi\.key$
+ ld\.so\.cache$
  bazzite$
- .rpm-ostree-shadow-mode-fixed.stamp$
+ \.rpm-ostree-shadow-mode-fixed\.stamp$
  pki/(/.*)*$
  sgml$
  skel$
  modulefiles$
  fstab$
  vpl$
- udev/hwdb.bin$
+ udev/hwdb\.bin$
  pki$
  cups/(.*)$
- .linuxbrew.check$
- .rpm-ostree-shadow-mode-fixed2.stamp$
-
+ \.linuxbrew\.check$
+ \.rpm-ostree-shadow-mode-fixed2\.stamp$

@@ -4,5 +4,7 @@ modules:
       - source: system/justfile
         destination:  /
   - type: script
+    snippets:
+      - "truncate -s -1 /usr/share/ublue-os/transient-etc-files.grep"
     scripts:
       - "system/justfile/add-custom-justfile.sh"
