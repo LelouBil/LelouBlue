@@ -52,10 +52,6 @@ modules:
         destination:  /
   - type: files
     files:
-      - source: desktop/sessions
-        destination:  /
-  - type: files
-    files:
       - source: desktop/sddm
         destination:  /
   # util
