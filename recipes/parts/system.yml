@@ -8,7 +8,7 @@ modules:
       - python3
       - nodejs
       - nodejs20
-      - perl
+      # todo temp - perl
       - gamescope-session-steam
   - type: files
     files:
@@ -42,7 +42,7 @@ modules:
 
 # transient root
   - type: script
-    snippets: 
+    snippets:
       - "printf '[root]\\ntransient = true\\n' >> /usr/lib/ostree/prepare-root.conf"
   - type: script
     scripts:
