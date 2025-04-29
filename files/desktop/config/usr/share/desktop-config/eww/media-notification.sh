@@ -11,8 +11,8 @@ if [[ -f $close_file ]]; then
 fi
 echo $next_close_time > $close_file
 
-$EWW_CMD update time-visible=true
-$EWW_CMD open media-notification
+eww --config "$EWW_CONFIG_DIR" update time-visible=true
+eww --config "$EWW_CONFIG_DIR" open media-notification
 should_close=false
 
 while [[ ! $should_close = true ]]; do
@@ -26,8 +26,8 @@ if [[ $cur_time_seconds -gt $close_time ]]; then
     should_close=false
     fi
 done
-$EWW_CMD close media-notification
-$EWW_CMD update time-visible=false
+eww --config "$EWW_CONFIG_DIR" close media-notification
+eww --config "$EWW_CONFIG_DIR" update time-visible=false
 rm $close_file
 
 
