@@ -196,7 +196,8 @@ tooltip {
     min-width: 29.1em;
     border: none;
     padding-right: 0;
-    color: white;
+    margin-left: -10em;
+    color: white
     /*border-top-right-radius: 10px;*/
     /*border-bottom-right-radius: 10px;*/
 }
