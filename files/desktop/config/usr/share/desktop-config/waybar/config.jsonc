@@ -53,7 +53,7 @@
       "full": ""
     },
     "format-time": "{H}h {m}",
-    "on-click": "$SYSTEM_EWW open --toggle powerprofile-selector "
+    "on-click": "eww --config "$EWW_CONFIG_DIR" open --toggle powerprofile-selector "
     // open eww with power profile selector
   },
   "bluetooth": {

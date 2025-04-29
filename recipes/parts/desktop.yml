@@ -62,15 +62,11 @@ modules:
   #      install:
   #        - overskride-nightly
   - type: systemd
-    user:
+    user
       enabled:
         - hyprpolkitagent.service
         - hypridle.service
         - hyprsunset.service
-  - type: files
-    files:
-      - source: desktop/polkit-kde-agent-scale
-        destination:  /
   # compatibilité
   - type: rpm-ostree
     install:
