@@ -62,7 +62,7 @@ modules:
   #      install:
   #        - overskride-nightly
   - type: systemd
-    user
+    user:
       enabled:
         - hyprpolkitagent.service
         - hypridle.service
