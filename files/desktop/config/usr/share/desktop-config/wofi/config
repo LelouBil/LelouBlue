@@ -1,5 +1,4 @@
 width=600
-style=$WOFI_STYLE_FILE
 height=400
 mode=drun
 prompt=
