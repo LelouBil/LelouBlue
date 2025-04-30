@@ -67,6 +67,8 @@ modules:
         - hyprpolkitagent.service
         - hypridle.service
         - hyprsunset.service
+        - dunst.service
+        - waybar.service
   # compatibilité
   - type: rpm-ostree
     install:
