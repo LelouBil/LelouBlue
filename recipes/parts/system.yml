@@ -9,6 +9,7 @@ modules:
       - nodejs
       - nodejs20
       # todo temp - perl
+      - gamescope-session-plus
       - gamescope-session-steam
   - type: files
     files:
