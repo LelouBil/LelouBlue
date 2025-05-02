@@ -4,7 +4,7 @@
     {
         \"logout\": {
             \"label\": \"Déconnexion\",
-            \"command\": \"hyprctl dispatch exit\"
+            \"command\": \"loginctl kill-session ''\"
         },
         \"reboot\": {
                 \"label\": \"Redemarrer\",
