@@ -36,19 +36,16 @@
  profile.d/nix.sh$
  systemd/system/(.*)/?nix-daemon.(service|socket)$
  systemd/system/(.*)/acpid.(service|socket)$
- systemd/system/(.*)/plugin_loader.(service|socket)$
+ systemd/system/plugin_loader.(service|socket)$
+ systemd/system/(.*)\.target.wants(/?.*)$
+ systemd/system/ensure-symlinked-units-resolve.service$
  systemd/system/nix.mount$
  systemd/system/nix-directory.service$
- selinux/
+ selinux(/?.*)$
  bazzite/
  NetworkManager/system-connections/(.*).nmconnection$
- cups/subscriptions.conf$
- cups/subscriptions.conf.O$
  systemd/system.control/?(.*)$
  systemd/system/default.target
- systemd/system/(.*)/?ensure-symlinked-units-resolve.service$
- systemd/system/(.*)/?ensure-symlinked-units-resolve.service$
- systemd/system/(.*)/?dmraid-activation.service$
  sysconfig/anaconda$
  sysconfig/network$
  tuned/active_profile$
@@ -63,16 +60,18 @@
  ublue-update\.d(/.*)*$
  brlapi\.key$
  ld\.so\.cache$
+ modules-load.d/ryzen_smu.conf$
  bazzite$
  \.rpm-ostree-shadow-mode-fixed\.stamp$
- pki/(/.*)*$
+ pki(|/.*)$
  sgml$
  skel$
  modulefiles$
- fstab$
+ fstab(\..*)$
  vpl$
  udev/hwdb\.bin$
  pki$
- cups/(.*)$
+ cups(|/.*)$
  \.linuxbrew\.check$
  \.rpm-ostree-shadow-mode-fixed2\.stamp$
+ yum.repos.d/(.*)$
