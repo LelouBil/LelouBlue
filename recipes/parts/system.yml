@@ -53,7 +53,7 @@ modules:
       - scope: system
         notify: true
         repo:
-        title: Flathub (system)
+          title: Flathub (system)
         install:
           - org.mozilla.firefox
           - org.pulseaudio.pavucontrol
