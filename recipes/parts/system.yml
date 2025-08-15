@@ -49,9 +49,12 @@ modules:
     scripts:
       - "system/delete-unnecessary-files.sh"
   - type: default-flatpaks
-    notify: true # Send notification after install/uninstall is finished (true/false)
-    system:
-      install:
-        - org.mozilla.firefox
-        - org.pulseaudio.pavucontrol
+    configurations:
+      - scope: system
+        notify: true
+        repo:
+        title: Flathub (system)
+        install:
+          - org.mozilla.firefox
+          - org.pulseaudio.pavucontrol
 
