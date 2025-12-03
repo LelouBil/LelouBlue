@@ -6,7 +6,8 @@ modules:
       copr:
         - leloubil/brillo
         - leloubil/wl-clip-persist
-        - solopasha/hyprland
+        # - solopasha/hyprland
+        - lionheartp/Hyprland # todo https://github.com/solopasha/hyprlandRPM/issues/46
     install:
       packages:
 #        - repo: copr:copr.fedorainfracloud.org:solopasha:hyprland
