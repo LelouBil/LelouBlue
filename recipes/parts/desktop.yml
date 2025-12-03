@@ -6,44 +6,46 @@ modules:
       copr:
         - leloubil/brillo
         - leloubil/wl-clip-persist
-        # - solopasha/hyprland
         - lionheartp/Hyprland # todo https://github.com/solopasha/hyprlandRPM/issues/46
+        - solopasha/hyprland
     install:
       packages:
-#        - repo: copr:copr.fedorainfracloud.org:solopasha:hyprland
-#          packages:
-        - hyprland
-        - hyprland-qtutils
-        - dunst
-        - swww
-        - waybar
-        - wofi
-        - hyprland-contrib
-        - hyprland-plugins
-        - hyprlock
-        - hypridle
-        - hyprpolkitagent
-        - hyprpicker
-        - hyprsysteminfo
-        - hyprsunset
-        - eww-wayland-git
-        - pyprland
-#        - repo: copr:copr.fedorainfracloud.org:leloubil:brillo
-#          packages:
-        - brillo
-        - pipewire
-        - kitty
-        - wireplumber
-        - network-manager-applet
-        - udiskie
-        - wl-mirror
-        - network-manager-applet
-        - NetworkManager-openconnect-gnome
-        - nm-connection-editor
-        - qt5ct
-        - qt6ct
-        - copyq
-        - wl-clip-persist
+       - repo: copr:copr.fedorainfracloud.org:lionheartp:Hyprland
+         packages:
+          - hyprland
+          - hyprland-plugins
+          - hyprland-guiutils
+          - hyprlock
+          - hypridle
+          - hyprpolkitagent
+          - hyprpicker
+          - hyprsysteminfo
+          - hyprsunset
+       - repo: copr:copr.fedorainfracloud.org:lionheartp:hyprland
+          - dunst
+          - swww
+          - waybar
+          - wofi
+          - hyprland-contrib # pas sur le copr de lionheartp
+          - eww-git
+          - pyprland
+       - repo: copr:copr.fedorainfracloud.org:leloubil:brillo
+         packages:
+          - brillo
+       - packages:
+          - pipewire
+          - kitty
+          - wireplumber
+          - network-manager-applet
+          - udiskie
+          - wl-mirror
+          - network-manager-applet
+          - NetworkManager-openconnect-gnome
+          - nm-connection-editor
+          - qt5ct
+          - qt6ct
+          - copyq
+          - wl-clip-persist
   - type: files
     files:
       - source: desktop/config
