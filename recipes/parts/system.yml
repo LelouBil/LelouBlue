@@ -1,16 +1,21 @@
 modules:
-  - type: rpm-ostree
+  - type: dnf
+    source: ghcr.io/blue-build/modules/dnf:dnf-module
     repos:
-      - https://copr.fedorainfracloud.org/coprs/kylegospo/bazzite/repo/fedora-%OS_VERSION%/kylegospo-bazzite-fedora-%OS_VERSION%.repo
+      coprs:
+        - kylegospo/bazzite
+        - tulilirockz/fw-fanctrl
     install:
-      - zsh
-      - git-delta
-      - python3
-      - nodejs
-      - nodejs20
-      # todo temp - perl
-      - gamescope-session-plus
-      - gamescope-session-steam
+      packages:
+        - zsh
+        - fw-fanctrl
+        - git-delta
+        - python3
+        - nodejs
+        - nodejs20
+        # todo temp - perl
+        - gamescope-session-plus
+        - gamescope-session-steam
   - type: files
     files:
       - source: system/fingerprint
