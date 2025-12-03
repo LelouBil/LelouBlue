@@ -8,12 +8,11 @@ modules:
       packages:
         - zsh
         - git-delta
-        - python3
         - nodejs
         - nodejs20
         # todo temp - perl
-        - gamescope-session-plus
-        - gamescope-session-steam
+        #- gamescope-session-plus todo
+        #- gamescope-session-steam
   - type: files
     files:
       - source: system/fingerprint
