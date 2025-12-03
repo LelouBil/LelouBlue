@@ -32,20 +32,19 @@ modules:
        - repo: copr:copr.fedorainfracloud.org:leloubil:brillo
          packages:
           - brillo
-       - packages:
-          - pipewire
-          - kitty
-          - wireplumber
-          - network-manager-applet
-          - udiskie
-          - wl-mirror
-          - network-manager-applet
-          - NetworkManager-openconnect-gnome
-          - nm-connection-editor
-          - qt5ct
-          - qt6ct
-          - copyq
-          - wl-clip-persist
+       - pipewire
+       - kitty
+       - wireplumber
+       - network-manager-applet
+       - udiskie
+       - wl-mirror
+       - network-manager-applet
+       - NetworkManager-openconnect-gnome
+       - nm-connection-editor
+       - qt5ct
+       - qt6ct
+       - copyq
+       - wl-clip-persist
   - type: files
     files:
       - source: desktop/config
