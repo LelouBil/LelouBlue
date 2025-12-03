@@ -3,12 +3,10 @@ modules:
     source: ghcr.io/blue-build/modules/dnf:dnf-module
     repos:
       coprs:
-        - kylegospo/bazzite
-        - tulilirockz/fw-fanctrl
+        - bazzite-org/bazzite
     install:
       packages:
         - zsh
-        - fw-fanctrl
         - git-delta
         - python3
         - nodejs
