@@ -6,58 +6,60 @@ modules:
       copr:
         - leloubil/brillo
         - leloubil/wl-clip-persist
+        - dturner/eww
         - lionheartp/Hyprland # todo https://github.com/solopasha/hyprlandRPM/issues/46
-        - solopasha/hyprland
     install:
       packages:
-       - repo: copr:copr.fedorainfracloud.org:lionheartp:Hyprland
-         packages:
-          - hyprland
-          - hyprland-plugins
-          - hyprland-guiutils
-          - hyprlock
-          - hypridle
-          - hyprpolkitagent
-          - hyprpicker
-          - hyprsysteminfo
-          - hyprsunset
-       - repo: copr:copr.fedorainfracloud.org:lionheartp:hyprland
-         packages:
-          - dunst
-          - swww
-          - waybar
-          - wofi
-          - hyprland-contrib # pas sur le copr de lionheartp
-          - eww-git
-          - pyprland
-       - repo: copr:copr.fedorainfracloud.org:leloubil:brillo
-         packages:
-          - brillo
-       - pipewire
-       - kitty
-       - wireplumber
-       - network-manager-applet
-       - udiskie
-       - wl-mirror
-       - network-manager-applet
-       - NetworkManager-openconnect-gnome
-       - nm-connection-editor
-       - qt5ct
-       - qt6ct
-       - copyq
-       - wl-clip-persist
+        #       - repo: copr:copr.fedorainfracloud.org:lionheartp:Hyprland
+        #         packages:
+        - hyprland
+        - hyprland-plugins
+        - hyprland-contrib
+        - hyprland-guiutils
+        - hyprlock
+        - hypridle
+        - hyprpolkitagent
+        - hyprpicker
+        - hyprsysteminfo
+        - hyprsunset
+        - awww
+        #       - repo: copr:copr.fedorainfracloud.org:solopasha:hyprland
+        #         packages:
+        #           - pyprland
+        - repo: copr:copr.fedorainfracloud.org:leloubil:brillo
+          packages:
+            - brillo
+        - repo: copr:copr.fedorainfracloud.org:dturner:eww
+          packages:
+            - eww
+        - repo: copr:copr.fedorainfracloud.org:leloubil:wl-clip-persist
+          packages:
+            - wl-clip-persist
+        - wofi
+        - dunst
+        - waybar
+        - kitty
+        - network-manager-applet
+        - udiskie
+        - wl-mirror
+        - network-manager-applet
+        - NetworkManager-openconnect-gnome
+        - nm-connection-editor
+        - qt5ct
+        - qt6ct
+        - copyq
   - type: files
     files:
       - source: desktop/config
-        destination:  /
+        destination: /
   - type: files
     files:
       - source: desktop/fonts
-        destination:  /
+        destination: /
   - type: files
     files:
       - source: desktop/sddm
-        destination:  /
+        destination: /
   # util
   #  - type: default-flatpaks
   #    notify: true
