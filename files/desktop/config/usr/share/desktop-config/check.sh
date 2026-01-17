@@ -1,4 +1,5 @@
 #!/bin/sh
+set -euxo pipefail
 set -a
 . /usr/lib/environment.d/desktop-env.conf
 set +a
