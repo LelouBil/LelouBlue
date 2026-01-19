@@ -4,5 +4,6 @@ set -a
 . /usr/lib/environment.d/desktop-env.conf
 set +a
 export XDG_RUNTIME_DIR=/tmp
-exec Hyprland --verify-config --i-am-really-stupid
+>&2 exec Hyprland --verify-config --i-am-really-stupid
+echo "Failed to exec Hyprland"
 exit 1
