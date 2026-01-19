@@ -29,7 +29,6 @@ jobs:
           # !! Add your recipes here
           - recipe.yml
     steps:
-      # the build is fully handled by the reusable github action
       - name: Build Custom Image
         uses: blue-build/github-action@v1.10
         with:
@@ -41,4 +40,4 @@ jobs:
           # enabled by default, disable if your image is small and you want faster builds
           maximize_build_space: true
           build_chunked_oci: true
-          use_cache: true
+          use_cache: "true"
