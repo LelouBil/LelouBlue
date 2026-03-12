@@ -7,6 +7,7 @@ modules:
         - leloubil/brillo
         - leloubil/wl-clip-persist
         - dturner/eww
+        - quadratech188/vicinae
         - lionheartp/Hyprland # todo https://github.com/solopasha/hyprlandRPM/issues/46
     install:
       packages:
