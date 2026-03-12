@@ -4,15 +4,15 @@
     {
         \"logout\": {
             \"label\": \"Déconnexion\",
-            \"command\": \"loginctl kill-session ''\"
+            \"command\": \"hyprshutdown -t 'Shutting down'\"
         },
         \"reboot\": {
                 \"label\": \"Redemarrer\",
-                \"command\": \"systemctl reboot\"
+                \"command\": \"hyprshutdown -t 'Restarting' --post-cmd 'systemctl reboot'\"
         },
         \"shutdown\": {
                 \"label\": \"Eteindre\",
-                \"command\": \"systemctl poweroff\"
+                \"command\": \"hyprshutdown -t 'Powering off' --post-cmd 'systemctl poweroff'\"
         }
     }
 ")
