@@ -8,11 +8,10 @@ modules:
         - leloubil/wl-clip-persist
         - dturner/eww
         - quadratech188/vicinae
+        - quadratech188/cmark-gfm
         - lionheartp/Hyprland # todo https://github.com/solopasha/hyprlandRPM/issues/46
     install:
       packages:
-        #       - repo: copr:copr.fedorainfracloud.org:lionheartp:Hyprland
-        #         packages:
         - hyprland
         - hyprland-plugins
         - hyprland-contrib
