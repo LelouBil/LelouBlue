@@ -19,13 +19,14 @@ modules:
         - hyprlock
         - hypridle
         - hyprpolkitagent
+        - hyprtoolkit
         - hyprpicker
         - hyprsysteminfo
+        - hyprqt6engine
+        - hyprpwcenter
+        - hyprshutdown
         - hyprsunset
         - awww
-        #       - repo: copr:copr.fedorainfracloud.org:solopasha:hyprland
-        #         packages:
-        #           - pyprland
         - repo: copr:copr.fedorainfracloud.org:leloubil:brillo
           packages:
             - brillo
@@ -35,7 +36,10 @@ modules:
         - repo: copr:copr.fedorainfracloud.org:leloubil:wl-clip-persist
           packages:
             - wl-clip-persist
-        - wofi
+        - repo: copr:copr.fedorainfracloud.org:quadratech188:vicinae
+          packages:
+            - vicinae
+        - wofi #todo remove wofi if vicinae is good
         - dunst
         - waybar
         - kitty
