@@ -44,7 +44,6 @@ modules:
         - network-manager-applet
         - udiskie
         - wl-mirror
-        - network-manager-applet
         - NetworkManager-openconnect-gnome
         - nm-connection-editor
         - qt5ct
