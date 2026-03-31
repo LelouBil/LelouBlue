@@ -10,7 +10,6 @@ modules:
         - git-delta
         - nodejs
         - nodejs20
-        # todo temp - perl
         #- gamescope-session-plus todo
         #- gamescope-session-steam
   - type: files

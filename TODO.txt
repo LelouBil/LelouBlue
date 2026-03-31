@@ -1,0 +1,16 @@
+migrer de wofi to vicinae
+
+hyprsunset
+script jetbrains-focus does not exist
+
+eww clavier
+bitwarden empreinte et sync web/flatpak
+bitwarden ssh (quand update)
+
+utiliser un autre daemon pour les medias peut etre
+utiliser un autre daemon pour l'OSD peut etre
+
+params bluetooth
+params wifi mieux
+
+chiffrer
