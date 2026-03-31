@@ -85,3 +85,4 @@ modules:
   - type: script
     snippets:
       - "/usr/share/desktop-config/check.sh"
+      - "/usr/share/desktop-config/systemd-only-on-hyprland.sh"
