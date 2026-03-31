@@ -76,6 +76,7 @@ modules:
         - hyprsunset.service
         - dunst.service
         - waybar.service
+        - udiskie.service
   # compatibilité
   - type: rpm-ostree
     install:

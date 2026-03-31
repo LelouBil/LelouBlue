@@ -11,6 +11,7 @@ UNITS=(
     "hyprsunset.service"
     "dunst.service"
     "waybar.service"
+    "udiskie.service"
 )
 
 for unit in "${UNITS[@]}"; do

@@ -1,7 +1,4 @@
 modules:
-  - type: systemd
-    user:
-      enabled: []
   - type: rpm-ostree
     install:
       - ydotool
@@ -9,6 +6,10 @@ modules:
       - wev
       - htop
       - mc
+  - type: systemd
+    system:
+      enabled:
+        - ydotool.service
   - type: files
     files:
       - source: system/system-apps/distrobox
