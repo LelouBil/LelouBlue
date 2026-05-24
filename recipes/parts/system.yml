@@ -12,10 +12,9 @@ modules:
         - nodejs20
         #- gamescope-session-plus todo
         #- gamescope-session-steam
-  - type: files
-    files:
-      - source: system/fingerprint
-        destination: /
+  - type: script
+    snippets:
+      - "authselect enable-feature with-fingerprint"
   - type: files
     files:
       - source: system/power
