@@ -1,5 +1,23 @@
-require("hyprland.programs")
-function monitors()
+---@type HyprlandPrograms
+local programs = require("hyprland.programs")
+---@type HyprlandAutostartModule
+local autostart = require("hyprland.autostart")
+---@type HyprlandLayoutModule
+local layout = require("hyprland.layout")
+---@type HyprlandGraphicsModule
+local graphics = require("hyprland.graphics")
+---@type HyprlandInputModule
+local input = require("hyprland.input")
+---@type HyprlandBindsModule
+local binds = require("hyprland.binds")
+---@type HyprlandSystemBindsModule
+local system_binds = require("hyprland.system-binds")
+---@type HyprlandWindowrulesModule
+local windowrules = require("hyprland.windowrules")
+---@type HyprlandWorkspacesModule
+local workspaces = require("hyprland.workspaces")
+
+local function monitors()
   hl.monitor({
     output = "eDP-1",
     mode = "2560x1600@165",
@@ -22,11 +40,12 @@ function monitors()
   })
 end
 
-function config()
+local function config()
   hl.config({
     general = {
       allow_tearing = true,
-      resize_on_border = true
+      resize_on_border = true,
+      layout = "master"
     },
     debug = {
       enable_stdout_logs = true,
@@ -39,7 +58,8 @@ function config()
       force_default_wallpaper = 0,
       disable_hyprland_logo = true,
       vrr = 1,
-      allow_session_lock_restore = 0,
+      allow_session_lock_restore = true,
+      on_focus_under_fullscreen = 2,
       anr_missed_pings = 3,
       focus_on_activate = true,
       animate_manual_resizes = true,
@@ -50,3 +70,10 @@ end
 
 monitors()
 config()
+
+autostart.setup()
+layout.setup()
+graphics.setup()
+input.setup(programs, binds, system_binds)
+windowrules.setup()
+workspaces.setup(programs)
