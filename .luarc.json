@@ -1,0 +1,23 @@
+{
+  "$schema": "https://raw.githubusercontent.com/EmmyLuaLs/emmylua-analyzer-rust/refs/heads/main/crates/emmylua_code_analysis/resources/schema.json",
+  "runtime": {
+    "version": "LuaLatest",
+    "requirePattern": ["?"]
+  },
+  "completion": {
+    "autoRequire": true,
+    "callSnippet": false,
+    "postfix": "@"
+  },
+  "doc": {
+    "syntax": "md"
+  },
+  "workspace": {
+    "library": [
+      "/usr/share/hypr/stubs"
+    ],
+    "workspaceRoots": [
+      "./files/desktop/config/usr/share/desktop-config/hypr"
+    ]
+  }
+}
